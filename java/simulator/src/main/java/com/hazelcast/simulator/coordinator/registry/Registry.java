@@ -346,9 +346,9 @@ public class Registry {
     }
 
     public static Registry loadInventoryYaml(File file, String loadGeneratorHosts, String nodeHosts) {
-        if (nodeHosts == null) {
-            throw new NullPointerException();
-        }
+//        if (nodeHosts == null) {
+//            throw new NullPointerException();
+//        }
 
         Registry registry = new Registry();
         List<AgentData> nodes = loadAgents(registry, nodeHosts);
